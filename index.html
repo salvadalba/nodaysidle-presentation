@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Developer portfolio starter template" />
+    <title>Developer Portfolio • Your Name</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="#">Your Name</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Toggle navigation</span>
+          ☰
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero container">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Your Name</h1>
+        <p class="lead">I build fast, accessible, and delightful web experiences.</p>
+        <div class="cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="#contact">Contact Me</a>
+        </div>
+      </section>
+
+      <section id="about" class="section container">
+        <h2>About</h2>
+        <p>
+          Briefly introduce yourself, your background, and what you love building.
+          This starter template keeps things simple and fast to customize.
+        </p>
+      </section>
+
+      <section id="projects" class="section container">
+        <h2>Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Project One</h3>
+            <p>Short description of your project. What problem does it solve?</p>
+            <ul class="meta">
+              <li>Role: Developer</li>
+              <li>Tech: HTML, CSS, JS</li>
+            </ul>
+            <div class="actions">
+              <a href="#" class="link">Live</a>
+              <a href="#" class="link">Source</a>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Project Two</h3>
+            <p>Short description of your project. What stands out?</p>
+            <ul class="meta">
+              <li>Role: Developer</li>
+              <li>Tech: React, Node</li>
+            </ul>
+            <div class="actions">
+              <a href="#" class="link">Live</a>
+              <a href="#" class="link">Source</a>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Project Three</h3>
+            <p>Short description of your project. Any metrics or impact?</p>
+            <ul class="meta">
+              <li>Role: Developer</li>
+              <li>Tech: Next.js, TypeScript</li>
+            </ul>
+            <div class="actions">
+              <a href="#" class="link">Live</a>
+              <a href="#" class="link">Source</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section container">
+        <h2>Skills</h2>
+        <ul class="pill-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Accessibility (a11y)</li>
+          <li>Testing</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section container">
+        <h2>Contact</h2>
+        <p>
+          Want to collaborate or chat? Reach out at
+          <a href="mailto:you@example.com">you@example.com</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
