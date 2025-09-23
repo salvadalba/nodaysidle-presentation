@@ -99,6 +99,22 @@ body::before {
 .journey-list li::before { content: ''; position: absolute; left: -5px; top: 50%; transform: translateY(-50%); width: 8px; height: 8px; background: var(--brand); border-radius: 50%; }
 .mystery-text { text-align: center; font-size: 1.2rem; color: var(--muted); margin-top: 2rem; padding: 1.5rem; border: 1px solid var(--border); border-radius: 0.25rem; background: rgba(255,51,51,0.02); }
 
+/* Achievements Section */
+.achievements-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+.achievement-card { background: var(--card); border: 1px solid var(--border); border-radius: 0.5rem; padding: 2rem 1rem; text-align: center; position: relative; overflow: hidden; transition: var(--transition); }
+.achievement-card::before { content: ''; position: absolute; top: -2px; left: -2px; right: -2px; bottom: -2px; border-radius: 0.5rem; opacity: 0; transition: opacity 0.3s; z-index: -1; }
+.achievement-card:hover { transform: translateY(-5px); }
+.achievement-card:hover::before { opacity: 1; }
+.glow-red::before { background: linear-gradient(45deg, #ff0000, #ff6666); }
+.glow-green::before { background: linear-gradient(45deg, #00ff00, #66ff66); }
+.glow-blue::before { background: linear-gradient(45deg, #0099ff, #66ccff); }
+.glow-purple::before { background: linear-gradient(45deg, #9933ff, #cc66ff); }
+.achievement-icon { font-size: 3rem; display: block; margin-bottom: 1rem; }
+.achievement-card h3 { color: var(--text); font-size: 1rem; margin: 0.5rem 0; text-transform: uppercase; letter-spacing: 0.05em; }
+.achievement-stat { color: var(--brand); font-size: 1.5rem; font-weight: 700; margin: 0.5rem 0; font-family: 'Courier New', monospace; }
+.achievement-card p { color: var(--muted); font-size: 0.9rem; margin: 0; }
+.achievement-quote { text-align: center; color: var(--muted); font-size: 1.1rem; margin-top: 2rem; padding: 1.5rem; border-left: 3px solid var(--brand); border-right: 3px solid var(--brand); }
+
 /* Skills Section */
 .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
 .skill-category { padding: 1.5rem; background: var(--card); border: 1px solid var(--border); border-radius: 0.25rem; }
